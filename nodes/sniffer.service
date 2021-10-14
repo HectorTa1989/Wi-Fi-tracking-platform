@@ -1,0 +1,10 @@
+[Unit]
+Description=Start the node's sniffer
+After=network.target
+
+[Service]
+ExecStart=/home/HectorTa1989/nodes/sniffer.py
+Type=simple
+
+[Install]
+WantedBy=default.target
